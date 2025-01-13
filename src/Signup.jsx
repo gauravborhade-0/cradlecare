@@ -31,7 +31,7 @@ function Signup() {
             placeholder="+91 Enter mobile number"
             maxLength={10}
             required
-          />
+          /> 
         </label>
         <br /><br />
         <button  id="Getotp" name="getotp" onClick={handleClick}>
