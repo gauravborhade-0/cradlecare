@@ -13,8 +13,8 @@ function OTP() {
           <h3>Verify OTP</h3>
           <br />
           <p>OTP</p>
-          <br />
-          <input type="text" maxLength={1} className="input-otp"/>
+          <br />          <input type="text" maxLength={1} className="input-otp"/>
+
           <input type="text" maxLength={1} className="input-otp"/>
           <input type="text" maxLength={1} className="input-otp"/>
           <input type="text" maxLength={1} className="input-otp"/>

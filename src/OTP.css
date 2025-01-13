@@ -39,3 +39,36 @@ html,body{
     
 }
 
+#signup-page{
+    background-color: #fff;
+    display: grid;
+    height: 500px;
+    width: 350px;
+    place-items: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 4%;
+    border-radius: 10px;
+}
+
+h1,p{
+    text-align: center;
+}
+
+#Mobileno{
+    background-color: #fb7185;
+    border-radius: 10px;
+    height: 25px;
+    width: 100%;
+    
+}
+#Getotp{
+    background-color: #7D7E7F;
+    border-radius: 10px;
+    place-items: center;
+}
+
+#label-mobileno{
+    width: 100%;
+
+}

@@ -11,29 +11,29 @@ html,body{
 
 #detail {
   font-size: 30px;
-  margin-left: 25%;
-  margin-top: 10px;
+  margin-left: 40%;
+  margin-top: 5px;
 }
 
-#detail0 {
-  font-size: 30px;
-  margin-left: 30%;
+.Myimage{
+  margin-left: 40%;
 }
 
 #detail1 {
   font-size: 20px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 .container {
   display: grid;
-  position: relative;
-  width: 350px;
-  height: 500px;
-  margin-top: 4%;
-  margin-left: 35%;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  width: 100%;
+  /* max-width: 800px; */
+  /* margin: auto; */
   border-radius: 10px;
-  background-color: antiquewhite;
+  background-color: #f0f0f0;
 }
+ 
 
 .name {
   width: 100%;
@@ -47,7 +47,7 @@ html,body{
   background-color: #f472b6;
   border-radius: 15px;
   margin: 4px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .input-icon {
@@ -60,15 +60,15 @@ html,body{
 .input-icon img {
   width: 30px;
   height: 30px;
-  margin-left: 60px;
-  margin-top: 410px;
+  /* margin-left: 60px; */
+  /* margin-top: 410px; */
 }
 
 .next{
   width: 200px;
   height: 30px;
-  margin-left: 20%;
+  /* margin-left: 20%; */
   border-radius: 20px;
   background-color: #f472b6;
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
