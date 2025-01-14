@@ -51,7 +51,9 @@ function Signup() {
         <input type="text" maxLength={1} className="input-otp"/>
         <input type="text" maxLength={1} className="input-otp"/>
         <input type="text" maxLength={1} className="input-otp"/>
-      </label>
+      </label>  
+
+      <br />
 
       <button type='submit' className='verify'>Verify</button>
 </div>

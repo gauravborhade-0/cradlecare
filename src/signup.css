@@ -11,12 +11,11 @@ html,body{
 
 #signup-page{
     background-color:#faebd7;
-    display: grid;
-    height:auto;
-    width: auto;
-    /* place-items: center; */
-    /* align-items: center; */
-    margin-left: 35%;
+    height:600px;
+    width: 600px;
+    place-items: center;
+    align-items: center;
+    margin-left: 28%;
     margin-top: 1%;
     border-radius: 10px;
     grid-template-columns: auto auto;
@@ -35,7 +34,7 @@ h2{
     background-color: #fb7185;
     border-radius: 10px;
     height: 25px;
-    width: 100%;
+    width: 1000px;
     
 }
 #Getotp{

@@ -9,66 +9,126 @@ html,body{
   height: 100%;
 }
 
+
+
+form {
+  display: grid;
+  width: 900px;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  /* place-items: center; */
+  /* max-width: 800px; */
+  margin-left: 60px  ;
+  border-radius: 10px;
+}
+
+
 #detail {
   font-size: 30px;
   margin-left: 40%;
-  margin-top: 5px;
+  margin-top:25px;
 }
 
 .Myimage{
   margin-left: 40%;
 }
 
-#detail1 {
-  font-size: 20px;
-  /* margin-left: 10px; */
-}
-.container {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 10px;
-  width: 100%;
-  /* max-width: 800px; */
-  /* margin: auto; */
-  border-radius: 10px;
-  background-color: #f0f0f0;
-}
- 
-
-.name {
-  width: 100%;
-  padding: 10px 40px 10px 10px; /* Adjust padding for icon space */
-  font-size: 16px;
+.label{
+  margin-left: 20%;
 }
 
 .name {
   height: 40px;
-  width: 300px;
+  width: 80%;
   background-color: #f472b6;
   border-radius: 15px;
-  margin: 4px;
-  /* margin-left: 20px; */
+  font-size: 16px;
+  /* padding: 10px 40px 10px 10px; Adjust padding for icon space */
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
-.input-icon {
+.input-icon1 {
   position: absolute;
-  right: 40px;
-  top: 36%;
+  right: 705px;
+  top: 49%;
   transform: translateY(-50%);
 }
 
-.input-icon img {
+.input-icon2 {
+  position: absolute;
+  right: 250px;
+  top: 64.5%;
+  transform: translateY(-50%);
+}
+
+.input-icon3 {
+  position: absolute;
+  right: 700px;
+  top: 80%;
+  transform: translateY(-50%);
+}
+
+.input-icon1 img {
+  width: 25px;
+  height: 25px;
+  /* margin-left: 60px; */
+  /* margin-top: 410px; */
+}
+
+.input-icon2 img {
+  width: 25px;
+  height: 25px;
+  /* margin-left: 60px; */
+  /* margin-top: 410px; */
+}
+.input-icon3 img {
   width: 30px;
   height: 30px;
   /* margin-left: 60px; */
   /* margin-top: 410px; */
 }
 
-.next{
-  width: 200px;
-  height: 30px;
-  /* margin-left: 20%; */
-  border-radius: 20px;
-  background-color: #f472b6;
-  /* margin-top: 10%; */
+p{
+  font-size: 20px;
 }
+
+#Fullname{
+  width: 400px;
+  margin-left: 10px;
+}
+
+#Pregdate{
+  width: 400px;
+  margin-left: 10px;
+}
+
+#dob{
+  width: 400px;
+  margin-left: 10px;
+}
+
+#pincode{
+  width: 400px;
+  margin-left: 10px;
+}
+
+#bloodgroup{
+  width: 400px;
+  margin-left: 10px;
+}
+
+#contact{
+  width: 400px;
+  margin-left: 10px;
+}
+
+.next{
+  width: 100px;
+  background-color: #f472b6;
+  border-radius: 15px;
+  font-size: 16px;
+  margin-left: 7%;
+  margin-top: 10px;
+}
+

@@ -7,72 +7,94 @@ import logo3 from "./assests/blood-donation.png";
 function Onboarding1() {
   return (
     <>
-      <p id="detail">Onboarding</p>
+      
+      <p id="detail">Onboarding</p> <br />
       <img
         src={Myimage}
         alt=""
         className="Myimage"
         style={{ width: "150px", height: "150px" }}
       />
-      <br />
       <div className="container">
         <form action="">
-          <p id="detail1">Full Name</p>
-          <input type="text" className="name" placeholder="Enter Name Here" />
-          <span className="input-icon">
+                    {/* Full Name */}
+                    <label htmlFor="" className="label">
+
+          <p id="detail1">Full Name:-</p>
+          <input type="text" className="name"  id="Fullname" placeholder="Enter name here" />          
+          <span className="input-icon1">
             <img src={logo1} alt="" />
           </span>
+                    </label>
 
-          {/* On boarding process 2/4 */}
-          {/* Date of Birth */}
+          {/* Pregnancy Date */}
+          <label htmlFor="" className="label">
 
-          <label>
-            <p id="detail1">Date Of Birth</p>
+          <p id="detail1">Expected Pregnancy Date:-</p>
+          <input
+            type="Date"
+            className="name"
+            id="Pregdate"
+            />
+            </label>
+
+            {/* Date of Birth */}
+          <label className="label">
+            <p id="detail1">Date Of Birth:-</p>
             <input
               type="date"
               className="name"
+              id="dob"
               placeholder="Select Date Of Birth"
               required
             />
           </label>
 
-          {/* On boarding process 2/4 */}
           {/* Resedentail Pincode */}
+          <label htmlFor="" className="label">
 
-          <p id="detail1">Resedential Pincode</p>
-          <br />
+          <p id="detail1">Resedential Pincode:-</p>
           <input
             type="text"
             className="name"
+            id="pincode"
             placeholder="Enter Your Pincode Here"
-          />
-          <span className="input-icon">
+            />
+            </label>
+          <span className="input-icon2">
             <img src={logo2} alt="" />
           </span>
 
-          {/* On boarding process 3/4 */}
 
-          <p id="detail1">Expected Pregnancy Date</p>
-          <br />
-          <input
-            type="Date"
-            className="name"
-            placeholder="Enter Your Pincode Here"
-          />
-
-          <br />
-          <br />
+                  {/* Blood Group  */}
+                  <label htmlFor="" className="label">
 
           <p id="detail1">Blood Group (A +ve)</p>
-          <br />
+          
           <input
             type="text"
             className="name"
-            placeholder="Enter Your Pincode Here"
-          />
-          <span className="input-icon">
+            id="bloodgroup"
+            placeholder="Enter blood gruoup"
+            />
+          <span className="input-icon3">
             <img src={logo3} alt="" />
-          </span>
+            </span>
+
+            </label>
+
+                  {/* Contact Number */}
+          <label htmlFor="" className="label">
+           <p>
+             Emergency Contact Information:-
+            </p>
+          <input
+            type="text"
+            className="name"
+            id="contact"
+            placeholder="Emergency Contact Information"
+            />
+            </label>
 
           <br />
           <button type="submit" className="next">
