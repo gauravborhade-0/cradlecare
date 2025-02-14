@@ -1,6 +1,6 @@
 // import React from "react";
 import { useEffect ,useState } from "react";
-import "./Profile-Page.css";
+import "../../src/profile_page/profile-page.css";
 import ProfileImg from "../assests/user.png"
 import { useNavigate } from "react-router-dom";
 import { db } from "../firebase/firebase";
@@ -74,7 +74,7 @@ const ProfilePage = () => {
 
         <div className="section">
           <h2>Customer Support</h2>
-          <div className="item">FAQ's</div>
+          <div className="item">FAQs</div>
           <div className="item">Contact Support</div>
         </div>
       </div>
