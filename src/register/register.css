@@ -1,0 +1,142 @@
+/* General Page Styling */
+.container{
+  background-color: #FFDAB9;   /* Warm pastel peach */
+  color: #4a4a4a; /* Soft dark gray for text */
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  margin-left: 7%;
+  background-color: #f7c4c4;  /* Clean white */
+  border-radius: 12px;
+  /* margin-top: 10%; */
+
+}
+/* Form Container */
+form {
+  display: grid;
+  /* width: 900px; */
+  grid-template-columns: auto auto;
+  gap: 20px;
+  padding: 0;
+  /* box-shadow: 0px 6px 12px rgba(239, 162, 162, 0.3); Soft pink shadow */
+}
+
+/* Form Heading */
+.detail {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  color: #4a4a4a;
+}
+
+/* Image Styling */
+.Myimage {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-left: 41%;
+}
+
+/* Labels */
+.label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #d46a6a; /* Soft warm red */
+  margin-left: 10px;
+}
+
+/* Input Fields */
+.name {
+  height: 45px;
+  width: 90%;
+  background-color: #fadadd; /* Soft blush pink */
+  border: 2px solid #e9a6a6; /* Muted rose */
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  color: #4a4a4a;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Placeholder Styling */
+.name::placeholder {
+  color: #866b6b;
+}
+
+/* Focus Effect */
+.name:focus {
+  border-color: #ff9aa2; /* Highlighted soft coral pink */
+  box-shadow: 0px 0px 5px rgba(255, 154, 162, 0.5);
+}
+
+/* Input Icons */
+.input-icon1,
+.input-icon2,
+.input-icon3,
+.input-icon4 {
+  position:absolute;
+  /* transform: translateY(-50%); */
+}
+
+.input-icon1 {
+  right: 703px;
+  top: 56.5%;
+}
+.input-icon2 {
+  right: 255px;
+  top: 74%;
+}
+.input-icon3 {
+  right: 700px;
+  top: 90.5%;
+}
+
+.input-icon4 {
+  right: 250px;
+  top: 91%;
+}
+
+.input-icon1 img,
+.input-icon2 img,
+.input-icon3 img,
+.input-icon4 img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Form Sections */
+#Fullname,
+#Pregdate,
+#dob,
+#pincode,
+#bloodgroup,
+#contact {
+  width: 400px;
+  margin-left: 10px;
+}
+
+/* Button Styling */
+.next {
+  width: 140px;
+  background-color: #ff9aa2; /* Soft coral pink */
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-left: 80%;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.next:hover {
+  background-color: #e86c79; /* Deeper coral */
+  box-shadow: 0px 4px 10px rgba(232, 108, 121, 0.3);
+}

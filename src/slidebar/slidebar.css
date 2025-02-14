@@ -1,0 +1,66 @@
+.InterIcon {
+  width: 30px;
+  height: 30px;
+  /* margin-top: 10px; */
+  transition: transform 0.3s ease; /* Optional: smooth transition effect */
+}
+
+/* Optional hover effect for the icon */
+.InterIcon:hover {
+  transform: scale(1.1);
+}
+
+/* Styles for the menu that gets toggled */
+.menu {
+  background-color: #f5f5f5;
+  position: absolute;
+  height: 470px;
+  width: 200px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header navigation links */
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Styling each link */
+.header1 {
+    display: inline;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for each link */
+.header1:hover {
+  background-color: #FFC0CB;
+  color: white;
+}
+
+.Homelogo{
+    height: 30px;
+}
+
+
+
+.Chatbot{
+    height: 35px;
+}
+
+.SOS{
+    height: 35px;
+}
+
+.Userprofile{
+    height: 30px;
+}

@@ -1,0 +1,97 @@
+
+/* General Chatbot Container */
+.chat-container {
+  background-color: #cfc5c5; /* Light background */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 800px;
+  height: 500px;
+  max-width: 500px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #ff9aae; /* Soft pink */
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Message Body */
+.Message-body {
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+/* Messages */
+.Message-body div {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.Message-body .user {
+  background-color: #ff9aae; /* Soft pink */
+  color: white;
+  text-align: right;
+}
+
+.Message-body .bot {
+  background-color: #e0e0e0; /* Soft gray */
+  color: #333;
+  text-align: left;
+}
+
+/* Input Message */
+.input-message {
+  width: 75%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-right: 10px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+/* Focus Effect on Input */
+.input-message:focus {
+  border-color: #ff9aae; /* Soft pink border on focus */
+}
+
+/* Button Styling */
+button {
+  background-color: #ff9aae; /* Soft pink */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* Hover Effect on Buttons */
+button:hover {
+  background-color: #e86c79; /* Darker pink */
+}
+
+/* Layout for Authentication Button */
+button:nth-of-type(2) {
+  background-color: #98fb98; /* Soft green for authentication button */
+  margin-top: 15px;
+}
+
+button:nth-of-type(2):hover {
+  background-color: #76d876; /* Darker green */
+}

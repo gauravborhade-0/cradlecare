@@ -1,13 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// import Signup from './Signup.jsx'
-import Onboarding1 from './Onboarding-1'
+import './index.css'
+import App from './route/App'
+// import { BrowserRouter } from 'react-router-dom';  // Import BrowserRouter from react-router-dom
 
+// import Appp from './Kyc/Kyc'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <Signup/> */}
-    {<Onboarding1/>}
+    {/* <BrowserRouter> */}
+    <App/>
+    {/* </BrowserRouter> */}
 
-  </StrictMode>,
+  </StrictMode>
 )

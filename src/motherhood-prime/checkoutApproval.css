@@ -1,0 +1,108 @@
+/* General Styling */
+/* body { */
+    /* background-color: #fff; */
+    /* font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* min-height: 100vh; */
+    /* margin: 0; */
+  /* } */
+  
+  /* Main Container */
+  .checkout-container {
+    width: 900px;
+    
+    max-width: 900px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 200px;
+  }
+  
+  /* Header */
+  .header {
+    background: #f87171;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    /* height: 80px; */
+  }
+  
+  /* Payment Section */
+  .payment-section {
+    padding: 20px;
+  }
+  
+  .payment-section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #dc2626;
+  }
+  
+  .amount-text {
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+  }
+  
+  .amount-highlight {
+    color: #dc2626;
+    font-weight: bold;
+  }
+  
+  /* Breakdown Card */
+  .breakdown-card {
+    background: #ff7f7f;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .breakdown-card h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  
+  .total {
+    font-weight: bold;
+    border-top: 1px solid white;
+    padding-top: 10px;
+  }
+  
+  /* Pay Now Button */
+  .pay-button {
+    width: 90%;
+    max-width: 300px;
+    background: #dc2626;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .pay-button:hover {
+    background: #b91c1c;
+  }
+  

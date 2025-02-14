@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+    /* background-color: #ffe4e6; */
+    font-family: Arial, sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* margin: 0; */
+  }
+  
+  /* Container */
+  .container {
+    width: 150%;
+    max-width: 1000px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 40px;
+    margin-right: 100px;
+  }
+  
+  /* Header */
+  .header {
+    background: #f87171;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 20px;
+  }
+  
+  /* Content */
+  .content {
+    padding: 30px;
+  }
+  
+  /* Section Titles */
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 25px;
+  }
+  
+  .highlight {
+    color: #dc2626;
+    font-weight: bold;
+  }
+  
+  /* Plan Cards */
+  .plan-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Desktop Layout */
+  @media (min-width: 768px) {
+    .plan-container.desktop-layout {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    }
+  }
+  
+  .plan-card {
+    background: linear-gradient(135deg, #ff7f7f, #ff4d4d);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .plan-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .plan-count {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .plan-title {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Checkout Button */
+  .checkout-button {
+    width: 100%;
+    max-width: 300px;
+    background: #dc2626;
+    color: white;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s;
+  }
+  
+  .checkout-button:hover {
+    background: #b91c1c;
+  }
+  
