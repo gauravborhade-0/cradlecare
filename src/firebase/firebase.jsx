@@ -1,6 +1,6 @@
 // Import the functions you need
 import { initializeApp, getApps, getApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAuth ,createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 // Firebase configuration
@@ -20,5 +20,5 @@ const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 export const auth = getAuth(app); // Export Firebase Auth
 export const db = getFirestore(app); // Export Firestore
 
-export { collection, addDoc }; // Export Firestore functions
+export { collection, addDoc ,createUserWithEmailAndPassword, signInWithEmailAndPassword}; // Export Firestore functions
 export default app; // Export Firebase app

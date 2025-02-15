@@ -1,9 +1,43 @@
-.sosbutton{
-padding: 15px 30px;
-font-size: 20px;
-color: white;
-background-color: red;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-} 
+/* SOS Wrapper - Centers button and gives a pregnancy-friendly background */
+.sos-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ffe6f2, #ffccdd); /* Soft pink gradient */
+  }
+  
+  /* SOS Button - Large, rounded, and easy to tap */
+  .sos-button {
+    background: #ff6680;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 99, 71, 0.4);
+    animation: glow 2s infinite alternate;
+  }
+  
+  /* Hover effect for better interaction */
+  .sos-button.hovered {
+    background: #ff2e5f;
+    transform: scale(1.1);
+  }
+  
+  /* SOS Button Glow Effect */
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 99, 71, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+    }
+  }
+  

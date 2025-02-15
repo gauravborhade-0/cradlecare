@@ -8,7 +8,7 @@ import { auth } from './firebase'; // Ensure this import is correct
 
 import { useNavigate } from 'react-router-dom';  // Correct navigation for react-router-dom v6
 import Myimage from '../assests/pregantwomen.png';
-
+ 
 const Phone = () => {
     const [phone, setPhone] = useState('');
     const [confirmationResult, setConfirmationResult] = useState(null);

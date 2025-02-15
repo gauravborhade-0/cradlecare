@@ -21,7 +21,8 @@
     "react-phone-input-2": "^2.15.1",
     "react-phone-number-input": "^3.4.11",
     "react-razorpay": "^3.0.1",
-    "react-router-dom": "^7.1.1"
+    "react-router-dom": "^7.1.1",
+    "styled-components": "^6.1.15"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

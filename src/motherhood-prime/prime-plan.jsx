@@ -1,7 +1,9 @@
-import React from "react";
+// import React from "react";
 import "./checkoutApproval.css"; // Import external CSS file
+import { useNavigate } from 'react-router-dom';  // Correct navigation for react-router-dom v6
 
 const CheckoutApproval = () => {
+  const navigate = useNavigate()
   return (
     <div className="checkout-container desktop-view">
       <div className="header">Checkout Approval</div>
@@ -29,7 +31,7 @@ const CheckoutApproval = () => {
         </div>
       </div>
 
-      <button className="pay-button">Pay Now</button>
+      <button className="pay-button" onClick={()=> {navigate('/pay')}}>Pay Now</button>
     </div>
   );
 };
