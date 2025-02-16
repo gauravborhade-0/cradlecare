@@ -1,6 +1,5 @@
-/* Main Container */
-.phone-signin {
-    background: #fbeaec;
+.email-Container {
+    background: #ffd9dd;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -14,24 +13,60 @@
     margin-top: 2%;
     margin-left: 30%;
 }
-h1{
+/* h1{
     color: #d9539f;
     margin-bottom: 0;
+} */
+
+#signup{
+    margin-top: 10px;
+    width: 150px;
+    /* max-width: 150px; */
+    height: 30px;
+    margin-left: 65%;
+    /* margin-right: -120px; */
+    background-color: #ff9aae;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    
 }
-.phone-signin:hover {
+
+#signin{
+    margin-top: 10px;
+    margin-left:75%;
+    margin-right: 20px;
+    background-color: #ff9aae;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.email-Container:hover {
     transform: scale(1.02);
 }
 
 /* Image Styling */
-.phone-signin .img {
-    width: 100%;
-    max-width: 250px;
+.email-Container .img {
+    width: auto;
+    max-width: 200px;
+    height: 100px;
     /* margin-bottom: 15px; */
     border-radius: 10px;
-}
+} 
 
-/* Phone Input */
-.phone-signin .phoneNum {
+/* Email Input */
+.email-Container .enterEmail {
     width: 150%;
     border-radius: 8px;
     padding: 10px;
@@ -39,16 +74,16 @@ h1{
     outline: none;
     font-size: 16px;
     transition: 0.3s;
-    margin-left:-15% ;
+    margin-left:30% ;
 }
 
-.phone-signin .phoneNum:focus {
+.email-Container .enterEmail:focus {
     border-color: #ff8fab;
     box-shadow: 0 0 8px rgba(255, 143, 171, 0.5);
 }
 
 /* OTP Input */
-.phone-signin .enterOtp input {
+.email-Container .enterEmail input {
     width: 100%;
     padding: 10px;
     border-radius: 8px;
@@ -56,14 +91,14 @@ h1{
     font-size: 16px;
 }
 
-.phone-signin .enterOtp input:focus {
+.email-Container .enterEmail input:focus {
     border-color: #ff8fab;
     box-shadow: 0 0 8px rgba(255, 143, 171, 0.5);
 }
 
 /* Button Styles */
-.phone-signin .sendOtp button,
-.phone-signin .Verify button {
+.email-Container #signin button,
+.email-Container #signup button {
     width: 100%;
     padding: 12px;
     border-radius: 8px;
@@ -72,44 +107,48 @@ h1{
     border: none;
     cursor: pointer;
     transition: background 0.3s ease-in-out, transform 0.2s;
+    
 }
 
-.phone-signin .sendOtp button {
+.email-Container #signin  {
     background-color: #ff8fab; /* Soft pink */
     color: white;
 }
 
-.phone-signin .sendOtp button:hover {
+.email-Container #signin:hover {
     background-color: #ff5e78;
     transform: scale(1.05);
 }
 
-.phone-signin .Verify button {
-    background-color: #4caf50; /* Green for success */
+.email-Container #signup{
+    background-color: #ff8fab; 
     color: white;
 }
 
-.phone-signin .Verify button:hover {
-    background-color: #388e3c;
+.email-Container #signup:hover {
+    background-color: #ff5e78;
     transform: scale(1.05);
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    .phone-signin {
-        width: 95%;
+    .email-Container {
+        width: 55%;
         padding: 20px;
     }
 
-    .phone-signin .phoneNum, 
-    .phone-signin .enterOtp input {
+    .email-Container .enterEmail, 
+    .email-Container .enterEmail input {
         font-size: 14px;
+        width: 90%;
         padding: 8px;
     }
 
-    .phone-signin .sendOtp button, 
-    .phone-signin .Verify button {
-        font-size: 14px;
+    .email-Container #signin button,  
+   .email-Container #signup button {
+        font-size: 4px;
         padding: 10px;
+        margin-right: 50%;
+        width: 50%
     }
 }

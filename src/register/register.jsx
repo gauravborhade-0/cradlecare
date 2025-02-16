@@ -53,8 +53,8 @@ function Onboarding1() {
   };
 
   return (
-    <div className="container">
-      <p className="detail">Onboarding</p> <br />
+    <div className="register-Container">
+      <h1 className="Onboarding">Onboarding</h1> <br />
       <img
         src={Myimage}
         alt="Pregnant Woman"
@@ -62,11 +62,11 @@ function Onboarding1() {
         style={{ width: "150px", height: "150px" }}
       />
       <form onSubmit={handleSave}> {/* Use handleSave instead of handleSubmit */}
-        <label className="label">
+        <label className="label-Name">
           <p id="userName">Full Name:</p>
           <input
             type="text"
-            className="name"
+            className="register-Input"
             id="Fullname"
             placeholder="Enter name here"
              name="name"
@@ -78,11 +78,11 @@ function Onboarding1() {
           </span>
         </label>
 
-        <label className="label">
+        <label className="label-Name">
           <p id="detail1">Expected Pregnancy Date:</p>
           <input
             type="date"
-            className="name"
+            className="register-Input"
             id="Pregdate"
             name="PregnancyDate"
             value={formData.PregnancyDate}
@@ -90,11 +90,11 @@ function Onboarding1() {
           />
         </label>
 
-        <label className="label">
+        <label className="label-Name">
           <p id="detail1">Date Of Birth:</p>
           <input
             type="date"
-            className="name"
+            className="register-Input"
             id="dob"
             name="DOB"
             value={formData.DOB}
@@ -103,11 +103,11 @@ function Onboarding1() {
           />
         </label>
 
-        <label className="label">
+        <label className="label-Name">
           <p id="detail1">Residential Pincode:</p>
           <input
             type="text"
-            className="name"
+            className="register-Input"
             id="pincode"
             placeholder="Enter Your Pincode Here"
             name="pincode"
@@ -119,11 +119,11 @@ function Onboarding1() {
           </span>
         </label>
 
-        <label className="label">
+        <label className="label-Name">
           <p id="detail1">Blood Group (A +ve):</p>
           <input
             type="text"
-            className="name"
+            className="register-Input"
             id="bloodgroup"
             placeholder="Enter blood group"
             name="bloodGroup"
@@ -135,11 +135,11 @@ function Onboarding1() {
           </span>
         </label>
 
-        <label className="label">
+        <label className="label-Name">
           <p>Emergency Contact Information:</p>
           <input
             type="text"
-            className="name"
+            className="register-Input"
             id="contact"
             placeholder="Emergency Contact Information"
             name="Contact_NO"

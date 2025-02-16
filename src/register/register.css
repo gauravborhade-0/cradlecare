@@ -1,26 +1,32 @@
 /* General Page Styling */
-.container{
-  background-color: #FFDAB9;   /* Warm pastel peach */
+.register-Container {
+  background-color: #FFDAB9; /* Warm pastel peach */
   color: #4a4a4a; /* Soft dark gray for text */
   font-family: "Poppins", sans-serif;
-  display: flex;
+  width: 900px;
   justify-content: center;
   align-items: center;
-  /* min-height: 100vh; */
-  margin-left: 7%;
+  min-height: 100vh;
+  margin-left: auto; /* Centering the container horizontally */
+  margin-right: auto; /* Centering the container horizontally */
   background-color: #f7c4c4;  /* Clean white */
   border-radius: 12px;
-  /* margin-top: 10%; */
-
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 /* Form Container */
 form {
   display: grid;
-  /* width: 900px; */
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr; /* Keeping columns equal */
   gap: 20px;
   padding: 0;
-  /* box-shadow: 0px 6px 12px rgba(239, 162, 162, 0.3); Soft pink shadow */
+  align-items: center; /* Vertically centering the form elements */
+}
+.Onboarding{
+  color: #e86c79;
 }
 
 /* Form Heading */
@@ -35,21 +41,23 @@ form {
 /* Image Styling */
 .Myimage {
   display: flex;
+  margin-top: -20px;
   justify-content: center;
-  margin-bottom: 10px;
-  margin-left: 41%;
+  margin-bottom: 5px;
+  align-self: center; /* Center the image horizontally */
 }
 
 /* Labels */
-.label {
+.label-Name {
   font-size: 18px;
   font-weight: 500;
   color: #d46a6a; /* Soft warm red */
   margin-left: 10px;
+  text-align: left; /* Align text to the left */
 }
 
 /* Input Fields */
-.name {
+.register-Input {
   height: 45px;
   width: 90%;
   background-color: #fadadd; /* Soft blush pink */
@@ -60,15 +68,17 @@ form {
   color: #4a4a4a;
   outline: none;
   transition: all 0.3s ease-in-out;
+  margin-left: auto; /* Align input fields to the center */
+  margin-right: auto; /* Align input fields to the center */
 }
 
 /* Placeholder Styling */
-.name::placeholder {
+.register-Input::placeholder {
   color: #866b6b;
 }
 
 /* Focus Effect */
-.name:focus {
+.register-Input:focus {
   border-color: #ff9aa2; /* Highlighted soft coral pink */
   box-shadow: 0px 0px 5px rgba(255, 154, 162, 0.5);
 }
@@ -79,25 +89,26 @@ form {
 .input-icon3,
 .input-icon4 {
   position:absolute;
-  /* transform: translateY(-50%); */
 }
 
 .input-icon1 {
-  right: 703px;
-  top: 56.5%;
+  right: 649px;
+  top: 51%;
 }
+
 .input-icon2 {
-  right: 255px;
-  top: 74%;
+  right: 220px;
+  top: 72%;
 }
+
 .input-icon3 {
-  right: 700px;
-  top: 90.5%;
+  right: 650px;
+  top: 93.5%;
 }
 
 .input-icon4 {
-  right: 250px;
-  top: 91%;
+  right: 225px;
+  top: 93.2%;
 }
 
 .input-icon1 img,
@@ -116,7 +127,8 @@ form {
 #bloodgroup,
 #contact {
   width: 400px;
-  margin-left: 10px;
+  margin-left: auto; /* Center the fields horizontally */
+  margin-right: auto; /* Center the fields horizontally */
 }
 
 /* Button Styling */
@@ -130,9 +142,12 @@ form {
   font-weight: bold;
   border-radius: 12px;
   cursor: pointer;
-  margin-left: 80%;
+  margin-left: auto; /* Align button to the right */
+  margin-right: -20%; /* Adjust button position */
   margin-top: 15px;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center; /* Align the button horizontally */
 }
 
 /* Button Hover Effect */

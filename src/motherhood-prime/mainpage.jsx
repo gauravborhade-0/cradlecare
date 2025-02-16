@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const plans = [
   { count: 2, title: "Gynaecologist Visits" },
-  { count: 4, title: "Nurse Home Visits" },
+  { count: 3, title: "Nurse Home Visits" },
   { count: 4, title: "Pediatricians Live Session" },
 ];
 

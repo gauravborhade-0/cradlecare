@@ -6,13 +6,13 @@ app.use(express.json());
 
 const razorpay = new Razorpay({
   key_id: "rzp_test_DziyEguOdZPEa5"
-//   key_secret: "YOUR_RAZORPAY_SECRET",
+  // key_secret: "YOUR_RAZORPAY_SECRET",
 });
 
 app.post("/create-order", async (req, res) => {
   try {
     const options = {
-      amount: 50000, // Amount in paise
+      amount: 50000, 
       currency: "INR",
     };
     const order = await razorpay.orders.create(options);

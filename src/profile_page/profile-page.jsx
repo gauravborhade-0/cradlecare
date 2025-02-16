@@ -1,26 +1,28 @@
-// import React from "react";
-import { useEffect ,useState } from "react";
+import  { useEffect, useState } from "react";
 import "../../src/profile_page/profile-page.css";
-import ProfileImg from "../assests/user.png"
+import ProfileImg from "../assests/user.png";
 import { useNavigate } from "react-router-dom";
-import { db } from "../firebase/firebase";
+import { db } from "../firebase/firebase"; // Adjust the import according to your file structure
 import { collection, getDocs } from "firebase/firestore";
 
-
-
 const ProfilePage = () => {
-  const navigate = useNavigate()
-  const [users, setUsers] = useState([]);
+  const navigate = useNavigate();
+  const [userData, setUserData] = useState({ name: "", trimester: "" });
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const querySnapshot = await getDocs(collection(db, "Register"));
+        const querySnapshot = await getDocs(collection(db, "userDetail"));
         const usersData = [];
         querySnapshot.forEach((doc) => {
           usersData.push({ id: doc.id, ...doc.data() });
         });
-        setUsers(usersData);
+
+        // Assuming you want the data of the first user
+        if (usersData.length > 0) {
+          const { fullName, trimester,dueDate } = usersData[0]; // Destructure name and trimester
+          setUserData({ fullName, trimester,dueDate }); // Set state with both values
+        }
       } catch (error) {
         console.error("Error fetching data: ", error);
       }
@@ -28,26 +30,18 @@ const ProfilePage = () => {
     fetchData();
   }, []);
 
-
-
   return (
     <div className="profile-container">
       {/* Profile Header */}
       <div className="profile-header">
         <img
-          src= {ProfileImg} /* Replace with actual profile image */
+          src={ProfileImg} /* Replace with actual profile image */
           alt="Profile"
           className="profile-pic"
         />
-        <h2 className="profile-name"> <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            {user.name} - {user.email}
-          </li>
-        ))}
-      </ul> </h2>
-        <p className="profile-info">Pregnancy: 24 Weeks (2nd Trimester)</p>
-        <p className="due-date">Due Date: June 15, 2025 | Baby: Girl 👶</p>
+        <h2 className="profile-name">{userData.fullName || "Loading..."}</h2> {/* Display username */}
+        <p className="profile-info">Pregnancy: {userData.trimester || "Loading..."}</p> {/* Display trimester */}
+        <p className="due-date">Due Date: {userData.dueDate ||"Loading..."} </p>
       </div>
 
       {/* Grid Layout for Content Sections */}
@@ -65,7 +59,7 @@ const ProfilePage = () => {
           <div className="item">Nutrition Guide</div>
           <div className="item">Prenatal Yoga & Exercises</div>
         </div>
-
+<br />
         <div className="section">
           <h2>Privacy & Security</h2>
           <div className="item">Privacy Settings</div>
@@ -79,7 +73,7 @@ const ProfilePage = () => {
         </div>
       </div>
 
-      <button className="logout-btn" onClick={()=> navigate("/")}>Logout</button>
+      <button className="logout-btn" onClick={() => navigate("/")}>Logout</button>
     </div>
   );
 };

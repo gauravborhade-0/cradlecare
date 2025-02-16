@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./kyc.css";
 import { db, collection, addDoc } from "../firebase/firebase";
-
+ 
 function PregnancyKYCForm() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -46,10 +46,10 @@ function PregnancyKYCForm() {
   };
 
   return (
-    <div className="container">
-      <h1>Pregnancy KYC Form</h1>
+    <div className="kyc-Container">
+      <h1 className="kyc-Heading">Pregnancy KYC Form</h1>
       <form onSubmit={handleSave}>
-        <label htmlFor="fullName">
+        <label htmlFor="fullName" className="fullName">
           Full Name:
           <br />
           <input
@@ -60,7 +60,7 @@ function PregnancyKYCForm() {
           />
         </label>
 
-        <label htmlFor="email">
+        <label htmlFor="email" className="email">
           Email:
           <br />
           <input
@@ -71,7 +71,7 @@ function PregnancyKYCForm() {
           />
         </label>
 
-        <label htmlFor="phone">
+        <label htmlFor="phone" className="phone">
           Phone Number:
           <br />
           <input
@@ -82,7 +82,7 @@ function PregnancyKYCForm() {
           />
         </label>
 
-        <label htmlFor="address">
+        <label htmlFor="address" className="address">
           Address:
           <br />
           <input
@@ -93,7 +93,7 @@ function PregnancyKYCForm() {
           />
         </label>
 
-        <label htmlFor="age">
+        <label htmlFor="age" className="age">
           Age:
           <br />
           <input
@@ -104,7 +104,7 @@ function PregnancyKYCForm() {
           />
         </label>
 
-        <label htmlFor="trimester">
+        <label htmlFor="trimester" className="trimester">
           Trimester:
           <br />
           <input
@@ -115,7 +115,7 @@ function PregnancyKYCForm() {
           />
         </label>
 
-        <label htmlFor="dueDate">
+        <label htmlFor="dueDate" className="dueDate">
           Expected Due Date:
           <br />
           <input
@@ -126,7 +126,7 @@ function PregnancyKYCForm() {
           />
         </label>
 
-        <label htmlFor="medicalHistory">
+        <label htmlFor="medicalHistory" className="medicalHistory">
           Medical History:
           <br />
           <textarea
@@ -136,7 +136,7 @@ function PregnancyKYCForm() {
           />
         </label>
 
-        <label htmlFor="consent">
+        <label htmlFor="consent" className="consent">
           <input type="checkbox" name="consent" /> I consent to sharing my information for KYC purposes.
         </label>
         <br />

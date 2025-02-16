@@ -6,13 +6,14 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 800px;
-  height: 500px;
+  height: 500px; 
   max-width: 500px;
   text-align: center;
   font-family: Arial, sans-serif;
+  
 }
 
-h2 {
+.mums {
   color: #ff9aae; /* Soft pink */
   font-size: 28px;
   margin-bottom: 20px;
@@ -69,9 +70,10 @@ h2 {
 }
 
 /* Button Styling */
-button {
+.sendBtn {
   background-color: #ff9aae; /* Soft pink */
   color: white;
+  width: 100px;
   padding: 10px 15px;
   border: none;
   border-radius: 25px;
@@ -82,16 +84,16 @@ button {
 }
 
 /* Hover Effect on Buttons */
-button:hover {
+.sendBtn:hover {
   background-color: #e86c79; /* Darker pink */
 }
 
 /* Layout for Authentication Button */
-button:nth-of-type(2) {
+.sendBtn:nth-of-type(2) {
   background-color: #98fb98; /* Soft green for authentication button */
   margin-top: 15px;
 }
 
-button:nth-of-type(2):hover {
+.sendBtn:nth-of-type(2):hover {
   background-color: #76d876; /* Darker green */
 }

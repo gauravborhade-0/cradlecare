@@ -6,7 +6,7 @@ const CheckoutApproval = () => {
   const navigate = useNavigate()
   return (
     <div className="checkout-container desktop-view">
-      <div className="header">Checkout Approval</div>
+      <div className="check-Header">Checkout Approval</div>
       <div className="payment-section">
         <h2>Payment Confirmation</h2>
         <p className="amount-text">

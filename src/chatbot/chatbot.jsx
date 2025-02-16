@@ -42,10 +42,10 @@ const Chatbot = () => {
 
     setInput("");
   };
-
+ 
   return (
-    <div className="chat-container" style={{ maxWidth: "400px", margin: "auto", textAlign: "center" }}>
-      <h2>Mums Mate</h2>
+    <div className="chat-container" style={{ maxWidth: "400px", margin: "auto", textAlign: "center", marginTop:"20px" }}>
+      <h2 className="Mums">Mums Mate</h2>
       <div className="Message-body" style={{ border: "1px solid gray", padding: "10px", height: "300px", overflowY: "auto" }}>
         {messages.map((msg, index) => (
           <div key={index} style={{ textAlign: msg.sender === "user" ? "right" : "left", margin: "5px" }}>
@@ -61,7 +61,7 @@ const Chatbot = () => {
         placeholder="Type a message..."
         style={{ width: "80%", padding: "5px" }}
       />
-      <button onClick={sendMessage} style={{ padding: "5px 10px", marginLeft: "5px" }}>Send</button>
+      <button onClick={sendMessage} className="sendBtn" style={{ padding: "5px 10px", marginLeft: "5px" }}>Send</button>
 
       {/* <button
         onClick={() => navigate("/auth")}
